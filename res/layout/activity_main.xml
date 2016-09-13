@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        style="@style/main_logo_img"
+        android:layout_marginLeft="@dimen/logo_marign_left"
+        tools:context=".MainActivity" />
+
+    <GridView
+        android:id="@+id/main_grid_menu"
+        android:layout_width="@dimen/main_menu_w"
+        android:layout_height="@dimen/main_menu_h"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:fadingEdge="none"
+        android:gravity="center_horizontal"
+        android:listSelector="#00000000"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/main_grid_menu"
+        android:background="@drawable/bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/collect"
+            style="@style/main_bottom_img"
+            android:src="@drawable/collect"
+            />
+
+        <ImageView
+            android:id="@+id/down_loader"
+            style="@style/main_bottom_img"
+            android:src="@drawable/down_loader"
+           />
+
+        <ImageView
+            android:id="@+id/add"
+            style="@style/main_bottom_img"
+            android:src="@drawable/add"
+             />
+
+        <ImageView
+            android:id="@+id/setting"
+            style="@style/main_bottom_img"
+            android:src="@drawable/setting"
+             />
+    </LinearLayout>
+    <ProgressBar
+            android:id="@+id/load_catalog"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+</RelativeLayout>

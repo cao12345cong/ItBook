@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 解决方案左右滑动菜单背景左边距 -->
+    <dimen  name="sltn_menu_back_margin">2dp</dimen>
+    
+    <!-- 编辑框字体 -->
+    <dimen name="sltn_edit_textsize">12dp</dimen>
+    
+    <!-- listView高度 -->
+    <dimen name="sltn_listView_h">450dp</dimen>
+    
+    <!-- item图片宽高 -->
+    <dimen name="sltn_list_item_image_wh">25dp</dimen>
+    <!-- 整个item布局外边距 -->
+    <dimen name="sltn_list_item_margin">18.0dp</dimen>
+    <!-- item标题左边距 -->
+    <dimen name="sltn_list_item_title_margin_l">3dp</dimen>
+    <!-- item内容高度 -->
+    <dimen name="sltn_list_item_content_h">48dp</dimen>
+    
+    <!-- item标题、内容字体 -->
+    <dimen name="sltn_list_item_title_textSize">18dp</dimen>
+     <dimen name="sltn_list_item_content_textSize">12dp</dimen>
+     
+    
+</resources>

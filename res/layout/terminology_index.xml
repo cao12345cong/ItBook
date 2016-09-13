@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itbook="http://schemas.android.com/apk/res/com.xtx.itbook.ui"
+    style="@style/rootview_style"
+    android:background="@color/term_content_bg"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <com.xtx.itbook.ui.TitleBarView
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        itbook:left_drawble="@drawable/ic_goback_selector"
+        itbook:right_drawble="@drawable/ic_finder_selector"
+        itbook:searchable="true"
+        itbook:showmenuable="false"
+        itbook:title_name="@string/terminology">
+
+
+    </com.xtx.itbook.ui.TitleBarView>
+
+    <!-- listView列表 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/lv_terminology"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@drawable/line_term_list"
+                android:dividerHeight="2dp"
+                android:footerDividersEnabled="true"
+                android:scrollbars="none" />
+			<!-- A-z -->
+            <com.xtx.itbook.ui.terminology.SideBarView
+                android:id="@+id/sb_terminology_sidrbarview"
+                android:background="@color/term_content_bg"
+                android:layout_width="25.0dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center" />
+        </LinearLayout>
+        <!-- siderbar选择的zimu -->
+		
+        <TextView
+            android:id="@+id/tv_terminology_dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/term_show_letting"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30.0dip" 
+            android:visibility="gone"/>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/pb_terminology"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </FrameLayout>
+
+</LinearLayout>

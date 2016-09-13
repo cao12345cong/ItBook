@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- faq首页listview的item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/faultcase_item_style"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_faultcase_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:maxHeight="30dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_faultcase_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:lineSpacingExtra="@dimen/margin_line_space"
+        android:maxHeight="45dp"
+        android:textColor="@color/gray"
+        android:textSize="12dp" />
+
+</LinearLayout>

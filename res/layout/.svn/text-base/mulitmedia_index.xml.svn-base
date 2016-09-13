@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rootview_style"
+    android:orientation="vertical">
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+   	<LinearLayout 
+   	    style="@style/margin_style"
+   	    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+   	     
+   	    <com.xtx.itbook.ui.MediaShowView
+   	        android:id="@+id/msv_multimedia_1"
+   	        android:layout_width="fill_parent"
+        	android:layout_height="200dp"
+   	        />
+   	        
+   	    
+   	</LinearLayout> 
+    <!-- 底部滑动菜单 -->
+	<com.xtx.itbook.ui.BottomMenuScrollView
+        android:background="@color/bottom_menu_bg"
+       	android:id="@+id/sv_faq_bottom_menu"
+       	android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+    </com.xtx.itbook.ui.BottomMenuScrollView>
+</LinearLayout>

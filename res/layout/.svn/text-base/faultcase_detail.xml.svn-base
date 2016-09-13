@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- faq详细页面 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rootview_style"
+    android:orientation="vertical" >
+    <!-- 头部 -->
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+    <!-- 详细解释 -->
+
+    <TextView
+        android:id="@+id/tv_faultcase_detail"
+        style="@style/margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titlebar"
+        android:background="@color/content"
+        android:lineSpacingExtra="@dimen/margin_line_space"
+        android:minHeight="100dp"
+        android:padding="10dp"
+        android:scrollbars="none"
+        android:textSize="@dimen/text_size" />
+    <!-- 底部菜单 -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_menu_collect" />
+
+</RelativeLayout>

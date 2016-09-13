@@ -1,0 +1,124 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <!-- logo -->
+    <style name="main_logo_img">
+        <item name="android:layout_width">@dimen/logo_width</item>
+        <item name="android:layout_height">@dimen/logo_width</item>
+        <item name="android:button">@null</item>
+        <item name="android:src">@drawable/it_book_logo</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- logo text -->
+    <style name="main_logo_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">@dimen/logo_txt</item>
+    </style>
+    <!-- 首界面 底部 图标. -->
+    <style name="main_bottom_img">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/bottom_marign</item>
+    </style>
+    
+    
+
+    <!-- 产品列表 item 样式 product_item.xml 背景样式 -->
+    <style name="product_item_style">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">110dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 产品列表 图片样式 product_item.xml -->
+    <style name="product_img_style">
+        <item name="android:layout_width">@dimen/product_img_w</item>
+        <item name="android:layout_height">@dimen/product_img_h</item>
+        <item name="android:gravity">fill</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+    
+	<!-- 容器通用margin -->
+    <style name="margin_style">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <!-- 根容器root -->
+    <style name="rootview_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/background</item>
+    </style>
+    
+    <!-- 标题栏 -->
+    <style name="titlebar_style" parent="@style/margin_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:background">@drawable/top_pink</item>
+    </style>
+    <!-- 标题栏图标 -->
+    <style name="titlebar_iv_style">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:background">@color/content</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- 标题栏标题 -->
+    <style name="titlebar_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- 底部菜单1图标，收藏，评论 -->
+    <style name="bottom_menu1_ic_style">
+        <item name="android:layout_width">@dimen/faq_ic_w</item>
+        <item name="android:layout_height">@dimen/faq_ic_h</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:clickable">true</item>
+        
+    </style>
+    <!-- 底部菜单1文字，收藏，评论 -->
+    <style name="bottom_menu1_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        
+    </style>
+     <!-- 故障案例 item 样式-->
+    <style name="faultcase_item_style">
+        <item name="android:background">@color/content</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <!-- 故障案例  图片样式 -->
+    <style name="faultcase_img_style">
+        <item name="android:layout_width">@dimen/faultcase_img_w</item>
+        <item name="android:layout_height">@dimen/faultcase_img_h</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+</resources>

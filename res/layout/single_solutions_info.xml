@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sgl_sltn_title_h"
+        android:layout_margin="@dimen/sgl_sltn_title_margin"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <!-- 返回 -->
+
+        <ImageView
+            android:id="@+id/sgl_sltn_btn_back"
+            android:layout_width="@dimen/sgl_sltn_back_btn_w"
+            android:layout_height="@dimen/sgl_sltn_back_btn_h"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sgl_sltn_back_margin_ltb"
+            android:src="@drawable/ic_goback" />
+        <!-- 分享 -->
+
+        <ImageView
+            android:id="@+id/sgl_sltn_btn_share"
+            android:layout_width="@dimen/sgl_sltn_back_btn_w"
+            android:layout_height="@dimen/sgl_sltn_back_btn_h"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/sgl_sltn_back_margin_ltb"
+            android:src="@drawable/ic_share" />
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/sgl_sltn_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sgl_sltn_title"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="@dimen/sgl_sltn_title_textsize" />
+    </RelativeLayout>
+
+    <!-- 解决方案文本 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_2"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sgl_sltn_textcontent_h"
+        android:layout_below="@id/rl_1"
+        android:layout_marginLeft="@dimen/sgl_sltn_title_margin"
+        android:layout_marginRight="@dimen/sgl_sltn_title_margin"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/sgl_sltn_content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="@dimen/sgl_sltn_textcontent_padding"
+            android:text="@string/sgl_sltn_text_content"
+            android:textSize="@dimen/sgl_sltn_textcontent_textsize" />
+    </RelativeLayout>
+
+    <!-- 解决方案相关内容显示 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_3"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+       android:layout_weight="1.0"
+        android:layout_marginLeft="@dimen/sgl_sltn_title_margin"
+        android:layout_marginRight="@dimen/sgl_sltn_title_margin" >
+
+     
+
+            <ListView
+                android:id="@+id/sltn_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/background"
+                android:dividerHeight="1dp"
+                android:footerDividersEnabled="true"
+                android:fadingEdge="none"
+                 >
+            </ListView>
+       
+    </RelativeLayout>
+
+    <!-- 评论，收藏 -->
+
+    <LinearLayout
+        android:id="@+id/sgl_sltn_bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sgl_sltn_bottom_ll_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:weightSum="1.0" >
+
+        <LinearLayout
+            android:id="@+id/ll_sgl_sltn_bottom_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/sgl_sltn_img_collect"
+                android:layout_width="@dimen/sgl_sltn_collect_w"
+                android:layout_height="@dimen/sgl_sltn_collect_h"
+                android:src="@drawable/btn_collection" />
+
+            <TextView
+                android:id="@+id/sgl_sltn_collect_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sgl_sltn_collect_text"
+                android:textSize="18dp" 
+                 android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sgl_sltn_bottom_critique"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".50"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/sgl_sltn_img_critique"
+                android:layout_width="@dimen/sgl_sltn_collect_w"
+                android:layout_height="@dimen/sgl_sltn_collect_h"
+                android:src="@drawable/btn_talk" />
+
+            <TextView
+                android:id="@+id/sgl_sltn_critique_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sgl_sltn_critique_text"
+                android:textSize="18dp"
+              android:textStyle="bold"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

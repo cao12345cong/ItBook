@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 公用标题栏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="@color/white"
+   android:gravity="center_vertical"
+   android:orientation="horizontal"
+   android:layout_margin="5.0dp"
+   android:weightSum="11"
+    >
+
+    <ImageView
+        android:id="@+id/sltn_titlebar_goback"
+       android:layout_width="24dp"
+       android:layout_height="24dp"
+        android:background="@drawable/ic_goback" 
+       android:layout_gravity="center_vertical"
+       android:layout_marginLeft="10dp"
+        
+        />
+    <LinearLayout
+        android:id="@+id/sltn_title_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="11"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+         >
+           <TextView
+        android:id="@+id/sltn_titlebar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VTL备份解决方案"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+         android:layout_gravity="center"
+         android:gravity="center"
+        />
+ 
+ <ImageView 
+     android:id="@+id/sltn_titlebar_img"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_vertical"
+     android:layout_marginLeft="10dp"
+     android:src="@drawable/ic_arrow_down"
+     />
+ </LinearLayout>
+  
+       
+       
+<EditText 
+             android:id="@+id/sltn_search_et"
+             android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:hint="请输入关键字"
+           android:textColorHint="@color/gray"
+           android:textStyle="bold"
+           android:textSize="15dp"
+           android:layout_weight="11"
+           android:layout_marginLeft="10dp"
+          android:layout_gravity="center_horizontal"
+          android:visibility="gone"
+             />
+    <ImageView
+        android:id="@+id/sltn_search_btn"
+         android:layout_width="24dp"
+       android:layout_height="24dp"
+       android:layout_gravity="center_vertical"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+        android:background="@drawable/ic_finder" />
+
+</LinearLayout>

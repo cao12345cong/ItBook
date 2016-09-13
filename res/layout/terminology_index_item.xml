@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/term_content_bg"
+    android:orientation="vertical" >
+
+    <!-- A-Z -->
+
+    <TextView
+        android:id="@+id/tv_catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/bg_term_letter"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <!--  -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/term_content_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:background="@drawable/terminology_list_item_selector"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/padding_left"
+            android:paddingRight="@dimen/padding_right"
+            android:textSize="@dimen/term_item_text_size" 
+            android:textColor="@color/term_item_text"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_term_arrow" />
+    </LinearLayout>
+
+</LinearLayout>

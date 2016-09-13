@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 故障案例 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itbook="http://schemas.android.com/apk/res/com.xtx.itbook.ui"
+    style="@style/rootview_style"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+    <com.xtx.itbook.ui.TitleBarView
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        itbook:left_drawble="@drawable/ic_goback_selector"
+        itbook:right_drawble="@drawable/ic_finder_selector"
+        itbook:searchable="true"
+        itbook:showmenuable="true"
+        itbook:title_name="@string/faultcase"/>
+    <!-- 搜索框 -->
+
+    <!-- listView列表 -->
+
+    <ListView
+        style="@style/margin_style"
+        android:id="@+id/lv_faultcase_index"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line_term_list"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:scrollbars="none" />
+
+    <!-- 底部滑动菜单 -->
+    <com.xtx.itbook.ui.BottomMenuScrollView
+        android:background="@color/bottom_menu_bg"
+       	android:id="@+id/sv_faultcase_bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_height">
+    </com.xtx.itbook.ui.BottomMenuScrollView>
+
+</LinearLayout>

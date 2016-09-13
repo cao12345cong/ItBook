@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏自定义属性 -->
+    <declare-styleable name="TitleBarView">
+        <!-- 左右图标的资源id -->
+		<attr name="left_drawble" format ="reference" />
+		<attr name="right_drawble" format ="reference"/>
+		<!-- 能否显示下拉菜单 -->
+		<attr name="showmenuable" format ="boolean"/>
+		<!-- 能否显示查找框 -->
+		<attr name="searchable" format ="boolean"/>
+		<!-- 标题名 -->
+		<attr name="title_name" format ="string"/>
+	</declare-styleable>
+</resources>

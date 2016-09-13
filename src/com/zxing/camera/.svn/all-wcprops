@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera
+END
+FlashlightManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera/FlashlightManager.java
+END
+CameraManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera/CameraManager.java
+END
+AutoFocusCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera/AutoFocusCallback.java
+END
+CameraConfigurationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera/CameraConfigurationManager.java
+END
+PlanarYUVLuminanceSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera/PlanarYUVLuminanceSource.java
+END
+PreviewCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/zxing/camera/PreviewCallback.java
+END

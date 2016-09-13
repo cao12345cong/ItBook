@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rootview_style"
+    android:orientation="vertical" >
+    <!-- 标题栏 -->
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar" />
+	<!-- 搜索框 -->
+
+    <LinearLayout
+        android:id="@+id/ll_collection_center_find"
+        style="@style/margin_style"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/background"
+        android:paddingLeft="@dimen/padding_left"
+        android:paddingRight="@dimen/padding_right"
+        android:visibility="gone" >
+
+        <EditText
+            android:id="@+id/et_collection_center_find"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:singleLine="true" />
+    </LinearLayout>
+    <!-- listView列表 -->
+    <ListView
+        android:id="@+id/lv_collection_center_index"
+        style="@style/margin_style"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/background"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:listSelector="@drawable/terminology_list_selector"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,70 @@
+10
+
+dir
+14596
+https://xtxserver:8443/svn/xtx/CODE/2013/ItBook/android/ItBook_Android/res
+https://xtxserver:8443/svn/xtx
+
+
+
+2013-11-25T07:12:20.968750Z
+14590
+chenhg
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+09b98549-b10d-3046-934d-29792088c62b
+
+values
+dir
+
+drawable
+dir
+
+drawable-hdpi
+dir
+
+anim
+dir
+
+menu
+dir
+
+drawable-ldpi
+dir
+
+values-1280x800
+dir
+
+drawable-mdpi
+dir
+
+values-800x480
+dir
+
+raw
+dir
+
+values-1920x1080
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+values-zh-rCN
+dir
+

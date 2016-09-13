@@ -1,0 +1,152 @@
+/*
+ * 官网地站:http://www.ShareSDK.cn
+ * 技术支持QQ: 4006852216
+ * 官方微信:ShareSDK   （如果发布新版本的话，我们将会第一时间通过微信将版本更新内容推送给您。如果使用过程中有任何问题，也可以通过微信与我们取得联系，我们将会在24小时内给予回复）
+ *
+ * Copyright (c) 2013年 ShareSDK.cn. All rights reserved.
+ */
+
+package cn.sharesdk.demo;
+
+import java.util.HashMap;
+
+import com.xtx.itbook.ui.R;
+
+import cn.sharesdk.facebook.Facebook;
+import cn.sharesdk.framework.Platform;
+import cn.sharesdk.framework.PlatformActionListener;
+import cn.sharesdk.framework.ShareSDK;
+import cn.sharesdk.framework.TitleLayout;
+import cn.sharesdk.sina.weibo.SinaWeibo;
+import cn.sharesdk.tencent.weibo.TencentWeibo;
+import cn.sharesdk.twitter.Twitter;
+import android.app.Activity;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.os.Handler.Callback;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
+/** 演示授权并获取获取AccessToken */
+public class GetTokenPage extends Activity implements Callback,
+        OnClickListener, PlatformActionListener
+{
+    private TitleLayout llTitle;
+
+    private Handler handler;
+
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        handler = new Handler(this);
+        setContentView(R.layout.page_get_access_token);
+        llTitle = (TitleLayout) findViewById(R.id.llTitle);
+        llTitle.getBtnBack().setOnClickListener(this);
+        llTitle.getTvTitle().setText(R.string.demo_get_access_token);
+
+        LinearLayout llList = (LinearLayout) findViewById(R.id.llList);
+        for (int i = 0, size = llList.getChildCount(); i < size; i++)
+        {
+            llList.getChildAt(i).setOnClickListener(this);
+        }
+        findViewById(R.id.btnFourSquare).setOnClickListener(this);
+    }
+
+    /** 演示的逻辑代码 */
+    public void onClick(View v)
+    {
+        if (v.equals(llTitle.getBtnBack()))
+        {
+            finish();
+            return;
+        }
+
+        String name = null;
+        switch (v.getId())
+        {
+            case R.id.btnSw:
+                name = SinaWeibo.NAME;
+                break;
+            case R.id.btnTc:
+                name = TencentWeibo.NAME;
+                break;
+            case R.id.btnFb:
+                name = Facebook.NAME;
+                break;
+            case R.id.btnTw:
+                name = Twitter.NAME;
+                break;
+        }
+
+        // 授权
+        if (name != null)
+        {
+            Platform plat = ShareSDK.getPlatform(this, name);
+            plat.setPlatformActionListener(this);
+            plat.authorize();
+        }
+    }
+
+    public void onComplete(Platform plat, int action,
+            HashMap<String, Object> res)
+    {
+        Message msg = new Message();
+        msg.arg1 = 1;
+        msg.arg2 = action;
+        msg.obj = plat;
+        handler.sendMessage(msg);
+    }
+
+    public void onCancel(Platform plat, int action)
+    {
+        Message msg = new Message();
+        msg.arg1 = 3;
+        msg.arg2 = action;
+        msg.obj = plat;
+        handler.sendMessage(msg);
+    }
+
+    public void onError(Platform plat, int action, Throwable t)
+    {
+        t.printStackTrace();
+
+        Message msg = new Message();
+        msg.arg1 = 2;
+        msg.arg2 = action;
+        msg.obj = plat;
+        handler.sendMessage(msg);
+    }
+
+    /** 通过Toast显示操作结果 */
+    public boolean handleMessage(Message msg)
+    {
+        Platform plat = (Platform) msg.obj;
+        String text = MainActivity.actionToString(msg.arg2);
+        switch (msg.arg1)
+        {
+            case 1:
+            { // 成功
+                text = plat.getName() + " get token: "
+                        + plat.getDb().getToken();
+            }
+                break;
+            case 2:
+            { // 失败
+                text = plat.getName() + " caught error";
+            }
+                break;
+            case 3:
+            { // 取消
+                text = plat.getName() + " authorization canceled";
+            }
+                break;
+        }
+
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+        return false;
+    }
+
+}

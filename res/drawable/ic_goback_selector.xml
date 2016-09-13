@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 标题栏 返回上一步按钮 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@drawable/ic_goback"/>
+    <item android:drawable="@drawable/ic_goback_white"></item>
+
+</selector>

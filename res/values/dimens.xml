@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 此xml中的配置数据位 标准配置 不会随着 屏幕分辨率变化  -->
+    
+    <dimen name="logo_width">40dp</dimen>
+    <dimen name="logo_height">40dp</dimen>
+    <dimen name="logo_txt">15dp</dimen>
+    
+	<dimen name="margin_tblr">18.0dp</dimen>
+	<dimen name="margin_left">10dp</dimen>
+	
+	<!-- 文本文字间的行距 -->
+	<dimen name="margin_line_space">8dp</dimen>
+	
+	<dimen name="bottom_tab_padding_up">5.0dp</dimen>
+	<dimen name="bottom_tab_font_size">10.0dp</dimen>
+</resources>

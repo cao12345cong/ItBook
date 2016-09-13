@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:itbook="http://schemas.android.com/apk/res/com.xtx.itbook.ui"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <com.xtx.itbook.ui.TitleBarView
+        android:id="@+id/product_title"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        itbook:left_drawble="@drawable/ic_goback_selector"
+        itbook:right_drawble="@drawable/ic_finder_selector"
+        itbook:searchable="true"
+        itbook:showmenuable="true"
+        itbook:title_name="@string/terminology"/>
+    <com.xtx.itbook.ui.LoaderListView
+        android:id="@+id/list_product"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/product_list_height"
+        android:layout_below="@+id/product_title"
+        android:cacheColorHint="@color/transparent"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:dividerHeight="2dp"
+        android:divider="@drawable/line_term_list"/>
+
+    <com.xtx.itbook.ui.BottomMenuScrollView
+        android:id="@+id/menu_bottom_scroll"
+        android:visibility="gone"
+        android:background="@drawable/bg_bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/bottom_height" >
+    </com.xtx.itbook.ui.BottomMenuScrollView>
+    <!-- 加载进度条 当此界面的数据加载完毕后 消失. -->
+    <ProgressBar
+            android:id="@+id/product_bar"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+</RelativeLayout>

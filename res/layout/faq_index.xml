@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- faq首页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itbook="http://schemas.android.com/apk/res/com.xtx.itbook.ui"
+    style="@style/rootview_style"
+    android:id="@+id/ll_faq_layout"
+    android:background="@color/faq_content_bg"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+	<com.xtx.itbook.ui.TitleBarView
+	    android:id="@+id/titlebar"
+	    android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        itbook:left_drawble="@drawable/ic_goback_selector"
+        itbook:right_drawble="@drawable/ic_finder_selector"
+        itbook:showmenuable="true"
+        itbook:searchable="true"
+        itbook:title_name="@string/faq"
+        />
+    <!-- listView列表 -->
+
+    <ListView
+        android:id="@+id/lv_faq_index"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line_term_list"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:listSelector="@drawable/terminology_list_selector"
+        android:scrollbars="none" />
+	<!-- 底部滑动菜单 -->
+    <com.xtx.itbook.ui.BottomMenuScrollView
+        android:background="@drawable/bg_bottom_menu"
+       	android:id="@+id/sv_faq_bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp">
+    </com.xtx.itbook.ui.BottomMenuScrollView>
+	
+</LinearLayout>

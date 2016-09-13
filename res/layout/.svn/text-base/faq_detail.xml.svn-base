@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 故障案例详细页面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itbook="http://schemas.android.com/apk/res/com.xtx.itbook.ui"
+    style="@style/rootview_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- 标题栏 -->
+	<com.xtx.itbook.ui.TitleBarView
+	    android:id="@+id/titlebar"
+	    android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        itbook:left_drawble="@drawable/ic_goback_selector"
+        itbook:right_drawble="@drawable/ic_share_selector"
+        itbook:showmenuable="false"
+        itbook:searchable="false"
+        itbook:title_name="@string/terminology"
+        />
+    <!-- 详细解释 -->
+   
+    <TextView
+        android:id="@+id/tv_faq_detail"
+        style="@style/margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_below="@id/titlebar"
+        android:background="@color/content"
+        android:lineSpacingExtra="@dimen/margin_line_space"
+        android:minHeight="100dp"
+        android:scrollbars="none"
+        android:textSize="@dimen/text_size" 
+        android:visibility="gone"/>
+    
+    <WebView
+        android:id="@+id/wv_faq_detail"
+        style="@style/margin_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:layout_below="@id/titlebar"
+        android:background="@color/content"
+        android:lineSpacingExtra="@dimen/margin_line_space"
+        android:minHeight="100dp"
+        android:scrollbars="none"
+        android:textSize="@dimen/text_size" />
+    
+	 <!-- 底部菜单 -->
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        layout="@layout/bottom_menu_collect" />
+    
+</LinearLayout>

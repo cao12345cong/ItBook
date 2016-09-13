@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cover"
+    android:padding="@dimen/sltn_list_item_margin" >
+
+    <RelativeLayout
+        android:id="@+id/sltn_item_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/sltn_item_image"
+            android:layout_width="@dimen/sltn_list_item_image_wh"
+            android:layout_height="@dimen/sltn_list_item_image_wh"
+            android:src="@drawable/ic_book" />
+
+        <TextView
+            android:id="@+id/sltn_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sltn_list_item_title_margin_l"
+            android:layout_toRightOf="@id/sltn_item_image"
+            android:text="VTL重删备份解决方案"
+            android:textSize="@dimen/sltn_list_item_title_textSize"
+            android:textStyle="bold"
+             />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sltn_item_text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sltn_list_item_content_h"
+        android:layout_alignLeft="@id/sltn_item_rl"
+        android:layout_below="@id/sltn_item_rl"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="@string/sgl_sltn_text_content"
+        android:textSize="@dimen/sltn_list_item_content_textSize" />
+
+</RelativeLayout>

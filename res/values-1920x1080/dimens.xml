@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页logo标志 -->
+    <dimen name="logo_width">100dp</dimen>
+    <dimen name="logo_height">100dp</dimen>
+    <dimen name="logo_txt">26dp</dimen>
+    
+    <!-- 首页 菜单 -->
+    <dimen name="main_menu_w">200dp</dimen>
+    <dimen name="main_menu_h">520dp</dimen>
+    
+	<dimen name="bottom_tab_padding_drawable">2.0dp</dimen>
+	<dimen name="bottom_tab_padding_up">5.0dp</dimen>
+	<dimen name="bottom_tab_font_size">10.0dp</dimen>
+</resources>

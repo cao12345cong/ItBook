@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo
+END
+MainActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/MainActivity.java
+END
+MainAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/MainAdapter.java
+END
+ShareContentCustomizeDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/ShareContentCustomizeDemo.java
+END
+JsonPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/JsonPage.java
+END
+MyAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/MyAdapter.java
+END
+WechatPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/WechatPage.java
+END
+GetInforPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/GetInforPage.java
+END
+JsonUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/JsonUtils.java
+END
+OneKeyShareCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/OneKeyShareCallback.java
+END
+SlidingMenuPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/SlidingMenuPage.java
+END
+GetTokenPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/GetTokenPage.java
+END
+AuthPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/AuthPage.java
+END
+CustomerPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/cn/sharesdk/demo/CustomerPage.java
+END

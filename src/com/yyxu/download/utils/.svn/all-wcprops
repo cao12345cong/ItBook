@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils
+END
+Utils.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils/Utils.java
+END
+StorageUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils/StorageUtils.java
+END
+TextUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils/TextUtils.java
+END
+ConfigUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils/ConfigUtils.java
+END
+MyIntents.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils/MyIntents.java
+END
+NetworkUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/utils/NetworkUtils.java
+END

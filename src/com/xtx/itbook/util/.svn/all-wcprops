@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/xtx/!svn/ver/14585/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util
+END
+AccessUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/xtx/!svn/ver/14585/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/AccessUtil.java
+END
+LogUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/LogUtil.java
+END
+HtmlImg.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/xtx/!svn/ver/14421/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/HtmlImg.java
+END
+PinYinUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/xtx/!svn/ver/14575/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/PinYinUtil.java
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/xtx/!svn/ver/14585/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/StringUtil.java
+END
+TimeMemoryUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/xtx/!svn/ver/14514/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/TimeMemoryUtil.java
+END
+Const.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/xtx/!svn/ver/14522/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/Const.java
+END
+ApkUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/xtx/!svn/ver/14421/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/ApkUtil.java
+END
+ConstantInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/xtx/!svn/ver/14585/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/ConstantInterface.java
+END
+ScreenManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/ScreenManager.java
+END
+FileUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/xtx/!svn/ver/14303/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/FileUtil.java
+END
+SltnUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/xtx/!svn/ver/14351/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/util/SltnUtil.java
+END

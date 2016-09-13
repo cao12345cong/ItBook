@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/xtx/!svn/ver/14593/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service
+END
+ProductService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/xtx/!svn/ver/14555/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/ProductService.java
+END
+SltnService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/xtx/!svn/ver/14572/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/SltnService.java
+END
+InitService.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/xtx/!svn/ver/14585/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/InitService.java
+END
+SharedPreferenceSevice.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/xtx/!svn/ver/14583/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/SharedPreferenceSevice.java
+END
+FaqService.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/xtx/!svn/ver/14591/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/FaqService.java
+END
+FaultcaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/xtx/!svn/ver/14380/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/FaultcaseService.java
+END
+TerminologyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/xtx/!svn/ver/14593/CODE/2013/ItBook/android/ItBook_Android/src/com/xtx/itbook/service/TerminologyService.java
+END

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  所有请求的网络数据地址 存放.
+ -->
+<resources>
+   <string name="web_ip">http://192.168.0.188:8080/it_book/json/</string>
+   
+   <string name="directory">directory.do</string>
+   
+   <string name="faq_url">faq.do</string>
+   
+   <string name="terminology_url">shuyu.do</string>
+   
+   <string name="faultcase_url">faultcase.do</string>
+   
+   <string name="productlist">productlist.do</string>
+   
+      <!-- 解决方案接口地址 -->
+   <string name="sltn_url">solutionlist.do</string>
+   
+     <!-- 解决方案详情接口地址 -->
+   <string name="sltn_dtl_url">solution.do</string>
+   
+ 
+   <string name="product">product.do</string>
+   
+   <string name="host">http://192.168.0.188:8080</string>
+   
+ 
+  
+</resources>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="top"
+        android:background="@drawable/top_pink"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/tradcase_dtl_goback"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_goback_white" />
+
+        <ImageView
+            android:id="@+id/tradcase_dtl_share"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_share_white" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+             android:paddingLeft="25dp"
+               android:paddingRight="25dp"
+               android:scrollbars="none"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                 >
+                 <TextView 
+                     android:id="@+id/tradcase_dtl_title"
+                     android:layout_width="fill_parent"
+                     android:layout_height="74dp"
+                     android:text="华为助力中国农业银行开启"
+                     android:textSize="20dp"
+                     android:textStyle="bold"
+                    android:gravity="center"
+                     
+                     />
+                 <ImageView 
+                     
+                     android:layout_width="fill_parent"
+                     android:layout_height="1dp"
+                     android:background="@color/red"
+                     android:src="@drawable/red_line"
+                     />
+                 <TextView
+                     android:id="@+id/tradcase_dtl_content"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="15dp"
+                     android:layout_marginTop="30dp"
+                      />
+                 <TextView 
+                     android:id="@+id/tradcase_dtl_intro_title"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="客户简介"
+                     android:textSize="18dp"
+                     android:textStyle="bold"                      android:layout_marginTop="60dp"
+                     />
+                 
+                 <TextView 
+                     android:id="@+id/tradcase_dtl_intro"
+                     android:layout_width="fill_parent"
+                     android:layout_height="wrap_content"
+                     android:textSize="15dp"
+                     android:background="@color/white"
+                     android:layout_marginTop="25dp"
+                     android:layout_marginBottom="25dp"
+                     />
+            </LinearLayout>
+        </ScrollView>
+        <!-- 底部评论、收藏 还没给id -->
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        layout="@layout/bottom_menu_collect" />
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xtx.itbook.ui"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="com.android.email.permission.READ_ATTACHMENT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.xtx.itbook.main.ItBookApp"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.xtx.itbook.main.AppDataSetting"
+        android:process="com.xtx.itbook"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+
+        <!-- 主页面 -->
+        <activity
+            android:name="com.xtx.itbook.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter> -->
+        </activity>
+        <activity
+            android:name="org.vudroid.pdfdroid.PdfViewerActivity"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:mimeType="application/pdf" />
+            </intent-filter>
+        </activity>
+        <!-- 二维码 -->
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <!-- 数据管理空间 -->
+        <activity android:name="com.xtx.itbook.main.AppDataSetting" />
+
+        <!-- 分享部分的Activity start -->
+        <activity
+            android:name="cn.sharesdk.demo.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="cn.sharesdk.demo.GetTokenPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.sharesdk.demo.GetInforPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.sharesdk.demo.JsonPage"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+            	Adapter表示一个继承自cn.sharesdk.framework.authorize.AuthorizeAdapter的类，
+            	这个类可以监听到页面的生命周期，也可以获取授权页面的各种UI控件。 
+            	开发者可以通过继承AuthorizeAdapter，重写其方法，并获取各种UI来自定义这个页面的行为。            -->
+            <meta-data
+                android:name="Adapter"
+                android:value="cn.sharesdk.demo.MyAdapter" />
+        </activity>
+        <activity
+            android:name="cn.sharesdk.demo.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 分享部分的Activity end -->
+
+
+        <!-- 下载service -->
+        <service android:name="com.yyxu.download.services.DownloadService" >
+            <intent-filter>
+                <action android:name="com.yyxu.download.services.IDownloadService" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.yyxu.download.services.DownloadTestActivity" >
+
+        </activity>
+        <!-- faq -->
+        <activity android:name="com.xtx.itbook.ui.faq.FaqActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xtx.itbook.ui.faq.FaqDetailActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <!-- 产品术语 -->
+
+        <activity android:name="com.xtx.itbook.ui.terminology.TerminologyActivity" 
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <activity android:name="com.xtx.itbook.ui.terminology.TerminologyDetailActivity"
+            android:screenOrientation="portrait" 
+            android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            
+        </activity>
+        <!-- 故障案例 -->
+        <activity android:name="com.xtx.itbook.ui.faultcase.FaultcaseActivity" 
+            android:screenOrientation="portrait"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+          
+        </activity>
+        <activity android:name="com.xtx.itbook.ui.faultcase.FaultcaseDetailActivity"
+            android:screenOrientation="portrait" 
+            android:configChanges="keyboard|keyboardHidden|orientation">
+        </activity>
+        <!-- 解决方案 -->
+        <activity
+            android:name="com.xtx.itbook.main.SglSltnActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+
+        </activity>
+
+        <activity
+            android:name="com.xtx.itbook.main.SolutionsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+        
+        <!-- 行业案例 TradCsDtlActivity -->
+         <activity
+            android:name="com.xtx.itbook.main.TradCsDtlActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+         <activity
+            android:name="com.xtx.itbook.main.TradCsActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+        
+        <activity
+            android:name="com.xtx.itbook.main.ProductActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+        <activity
+            android:name="com.xtx.itbook.main.ProductDetial"
+            android:configChanges="keyboard|keyboardHidden|orientation" >
+        </activity>
+        
+    </application>
+
+</manifest>

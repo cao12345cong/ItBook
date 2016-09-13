@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itbook="http://schemas.android.com/apk/res/com.xtx.itbook.ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <!-- 标题栏 -->
+	<com.xtx.itbook.ui.TitleBarView
+	    android:id="@+id/titlebar_tradecase"
+	    android:layout_width="fill_parent"
+        android:layout_height="48dp"
+          android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        itbook:left_drawble="@drawable/ic_goback_selector"
+        itbook:right_drawble="@drawable/ic_finder_selector"
+        itbook:showmenuable="true"
+        itbook:searchable="true"
+        itbook:title_name="@string/faq"
+        android:background="@drawable/top_pink"
+        />
+     <com.xtx.itbook.ui.LoaderListView
+        android:id="@+id/tradecase_listview"
+        android:layout_width="fill_parent"
+       android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:divider="@color/background"
+        android:dividerHeight="1dp"
+          android:cacheColorHint="@color/transparent"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        
+        />
+      <com.xtx.itbook.ui.BottomMenuScrollView
+        android:id="@+id/tradecase_bottom_menu_id"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bottom_menu_bg"/>
+
+</LinearLayout>

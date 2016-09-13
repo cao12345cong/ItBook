@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  	  <!-- 解决方案 single_solutions -->
+  	  
+ <!-- 标题栏高度 -->
+  	<dimen name="sgl_sltn_title_h">40dp</dimen>
+ <!-- 标题栏外边距 --> 	
+ 	<dimen name="sgl_sltn_title_margin">5.0dp</dimen>
+ <!--  分享Btn,返回Btn宽高 -->
+    <dimen name="sgl_sltn_back_btn_w">30dp</dimen>  
+    <dimen name="sgl_sltn_back_btn_h">25.0dp</dimen>  
+    
+    <!-- 分享Btn右上下，返回Btn左上下外边距 -->
+    <dimen name="sgl_sltn_back_margin_ltb">10dp</dimen>
+        
+    <!-- 解决方案标题字体大小 -->
+    <dimen name="sgl_sltn_title_textsize">24.0dp</dimen>
+    
+ <!-- 解决方案文本内容-->
+     <dimen name="sgl_sltn_textcontent_h">135.0dp</dimen>
+     <!-- 文本内容字体 -->
+     <dimen name="sgl_sltn_textcontent_textsize">15.0dp</dimen>
+     <!--文本内容上下、左右padding  -->
+     <dimen name="sgl_sltn_textcontent_padding">20dp</dimen>
+       	
+<!-- 解决方案 显示按钮-->
+	<!-- btn上外边距 -->
+	<dimen name="sgl_sltn_showbtn_margin_t">1.0dp</dimen>
+    <!-- btn高度 -->
+	<dimen name="sgl_sltn_showbtn_h">40dp</dimen>
+	<!-- btn文本左边距 -->
+	<dimen name="sgl_sltn_showbtn_padding_l">8.0dp</dimen>
+	<!--btn文本字体大小 -->
+	<dimen name="sgl_sltn_showbtn_textsize">18.0dp</dimen>
+	<!-- 图片左边距，大小 -->
+	<dimen name="sgl_sltn_showbtn_image_margin_r">6.0dp</dimen>
+	<dimen name="sgl_sltn_showbtn_image_h">10dp</dimen>
+	<dimen name="sgl_sltn_showbtn_image_w">8.0dp</dimen>
+	<dimen name="margin_lr">10dp</dimen>
+	
+<!-- 解决方案收藏 ,评论btn宽高-->
+     <dimen name="sgl_sltn_bottom_ll_h">50dp</dimen>
+	<dimen name="sgl_sltn_collect_w">35.0dp</dimen>
+	<dimen name="sgl_sltn_collect_h">30dp</dimen>
+	<!--解决方案收藏,评论字体  -->
+	<dimen name="sgl_sltn_bottom_textsize">12.0dp</dimen>
+    
+  </resources>

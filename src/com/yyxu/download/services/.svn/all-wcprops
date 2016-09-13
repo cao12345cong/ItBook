@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/xtx/!svn/ver/14530/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services
+END
+AndroidHttpClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/AndroidHttpClient.java
+END
+TrafficCounterService.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/TrafficCounterService.java
+END
+DownloadTaskListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/DownloadTaskListener.java
+END
+DownloadManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/DownloadManager.java
+END
+DownloadTestActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/DownloadTestActivity.java
+END
+NoMemoryException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/xtx/!svn/ver/14530/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/NoMemoryException.java
+END
+DownloadException.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/DownloadException.java
+END
+DownloadService.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/DownloadService.java
+END
+IDownloadService.aidl
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/IDownloadService.aidl
+END
+DownloadTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/DownloadTask.java
+END
+HttpDateTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/HttpDateTime.java
+END
+FileAlreadyExistException.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/xtx/!svn/ver/14075/CODE/2013/ItBook/android/ItBook_Android/src/com/yyxu/download/services/FileAlreadyExistException.java
+END

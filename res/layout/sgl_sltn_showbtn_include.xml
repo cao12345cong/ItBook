@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_sgl_sltn_show"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_sgl_sltn_showbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/sgl_sltn_showbtn_h"
+        android:layout_marginTop="@dimen/sgl_sltn_showbtn_margin_t"
+        android:background="@color/white"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/sgl_sltn_showbtn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/sgl_sltn_showbtn_padding_l"
+            android:text="@string/sgl_sltn_btntext_backdrop"
+            android:textSize="@dimen/sgl_sltn_showbtn_textsize" />
+
+        <ImageView
+            android:id="@+id/sgl_sltn_showbtn_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:layout_marginRight="@dimen/sgl_sltn_showbtn_image_margin_r"
+            android:src="@drawable/ic_arrow_right"/>
+    </RelativeLayout>
+
+   
+
+</LinearLayout>

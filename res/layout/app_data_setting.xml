@@ -1,0 +1,15 @@
+<!-- 设定 中 应用程序管理  空间管理 设定. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="清除数据."
+        tools:context=".MainActivity" />
+
+</RelativeLayout>

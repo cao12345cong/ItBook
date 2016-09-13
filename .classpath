@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry kind="lib" path="libs/afinal-0.3.3-bin.jar"/>
+	<classpathentry kind="lib" path="libs/android-support-v4.jar"/>
+	<classpathentry kind="lib" path="libs/fastjson-1.1.27.jar"/>
+	<classpathentry kind="lib" path="libs/mframework.jar"/>
+	<classpathentry kind="lib" path="libs/pinyin4j-2.5.0.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Core.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Facebook.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-SinaWeibo.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-TencentWeibo.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Twitter.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Wechat-Core.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Wechat-Moments.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Wechat.jar"/>
+	<classpathentry kind="lib" path="libs/zxing.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

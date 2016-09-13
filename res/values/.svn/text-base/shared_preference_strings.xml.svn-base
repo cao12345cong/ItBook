@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- xml保存数据  的 name ，key -->
+<resources>
+   <!-- sharedpreference 的 name 用于保存  返回的时间 以及 语言 -->
+   <string name="directory_xml">directory</string>
+   <string name="time_key">time_key</string>
+   <string name="language_key">language_key</string>
+   
+   <!-- 产品术语的服务器最新时间time -->
+  <string name="terminology_last_update_time_cn">terminology_last_time_cn</string> 
+  <string name="terminology_last_update_time_en">terminology_last_time_en</string> 
+  <!-- 产品术语的服务器最近访问日期 -->
+  <string name="terminology_last_access_date_cn">terminology_last_access_date_cn</string> 
+  <string name="terminology_last_access_date_en">terminology_last_access_date_en</string>
+   
+  <!-- 产品FAQ的服务最新更新时间time -->
+  <string name="faq_last_update_time_cn">terminology_last_time_cn</string> 
+  <string name="faq_last_update_time_en">terminology_last_time_en</string>
+  <!-- 产品FAQ的服务器最近访问日期 -->
+  <string name="faq_last_access_date_cn">terminology_last_access_date_cn</string> 
+  <string name="faq_last_access_date_en">terminology_last_access_date_en</string>
+</resources>
+

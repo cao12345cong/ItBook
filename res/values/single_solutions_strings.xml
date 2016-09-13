@@ -1,0 +1,16 @@
+<resources>
+   	<!-- 解决方案single solutions -->
+	<!-- 解决方案single title -->
+	<string name="sgl_sltn_title">VTL重删备份解决方案</string>
+	<!-- 解决方案文本内容  -->
+	<string name="sgl_sltn_text_content">国际著名调查公司Gartner的数据表明：在灾难中丢失数据的公司，2/5企业没有回复运营，剩下的也有1/3在两年内破产。因此，数据的备份显得至关重要，而企业业务发展壮大的同时，更面临着"数据无休止增长"的管理难题，如何规划一套高效智能的备份解决方案，是企业当前迫在眉睫的大事。</string>
+	<!-- 显示按钮文本 -->
+	<string name="sgl_sltn_btntext_backdrop">背景/挑战</string>
+	<string name="sgl_sltn_btntext_plan">解决方案</string>
+	<string name="sgl_sltn_btntext_brightspot">方案亮点</string>
+	<string name="sgl_sltn_btntext_relatedproducts">相关产品</string>
+	<string name="sgl_sltn_btntext_moreresourses">更多资源</string>
+	
+	<string name="sgl_sltn_collect_text">收藏</string>
+	<string name="sgl_sltn_critique_text">评论</string>
+</resources>
